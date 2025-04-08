@@ -11,7 +11,7 @@ const SingleArtistCard = ({ id, sortOption }) => {
         const getPaintingInfo = async () => {
             setLoading(true);
             try {
-                const response = await fetch(`http://34.172.61.40:8080/api/paintings/artist/ref/${id}`);
+                const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/artist/ref/${id}`);
                 if (!response.ok) {
                     throw new Error(`Error fetching paintings: ${response.status}`);
                 }

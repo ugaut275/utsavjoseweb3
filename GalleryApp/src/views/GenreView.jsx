@@ -24,7 +24,7 @@ const GenreView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://34.172.61.40:8080/api/genres");
+        const response = await fetch("https://web3-assign1-zj1j.onrender.com/api/genres");
         const data = await response.json();
         setGenres(data);
       } catch (error) {

@@ -48,7 +48,7 @@ const FavouritesView = () => {
         if (galleries.length > 0) {
           const galleriesData = await Promise.all(
             galleries.map(async (galleryId) => {
-              const response = await fetch(`http://34.172.61.40:8080/api/paintings/galleries/ref/${galleryId}`)
+              const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/galleries/ref/${galleryId}`)
               const data = await response.json()
               return data[0]
             })
@@ -61,7 +61,7 @@ const FavouritesView = () => {
         if (artists.length > 0) {
           const artistsData = await Promise.all(
             artists.map(async (artistId) => {
-              const response = await fetch(`http://34.172.61.40:8080/api/artists/ref/${artistId}`)
+              const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/artists/ref/${artistId}`)
               const data = await response.json()
               return data
             })
@@ -74,7 +74,7 @@ const FavouritesView = () => {
         if (paintings.length > 0) {
           const paintingsData = await Promise.all(
             paintings.map(async (paintingId) => {
-              const response = await fetch(`http://34.172.61.40:8080/api/paintings/ref/${paintingId}`)
+              const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/ref/${paintingId}`)
               const data = await response.json()
               return data
             })
@@ -87,7 +87,7 @@ const FavouritesView = () => {
         if (genres.length > 0) {
           const genresData = await Promise.all(
             genres.map(async (genreId) => {
-              const response = await fetch(`http://34.172.61.40:8080/api/genres/ref/${genreId}`)
+              const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/genres/ref/${genreId}`)
               const data = await response.json()
               return data
             })

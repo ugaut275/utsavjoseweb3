@@ -14,14 +14,14 @@ const SingleGenreCard = ({ id, sortOption }) => {
       try {
         /* since genre endpoints doenst return image with the imageFileName i needed to first get the imageId and then run another API for the painting 
         to get the imageFileName component  i had the 2 endpoints built but i didnt know how i was supposed to merge them together so i asked AI to save time*/
-        const response = await fetch(`http://34.172.61.40:8080/api/paintings/genre/ref/${id}`);
+        const response = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/genre/ref/${id}`);
   
         const data = await response.json();
 
         const detailedPaintings = await Promise.all(
           data.map(async (painting) => {
             try {
-              const paintingResponse = await fetch(`http://34.172.61.40:8080/api/paintings/ref/${painting.paintingId}`);
+              const paintingResponse = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/ref/${painting.paintingId}`);
               const paintingDetails = await paintingResponse.json();
               return { ...painting, ...paintingDetails };  //used some AI help for this line... 
             } catch (error) {

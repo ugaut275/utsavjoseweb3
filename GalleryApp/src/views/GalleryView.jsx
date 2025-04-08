@@ -27,7 +27,7 @@ const GalleryView = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://35.193.45.17:8080/api/gallery');
+        const response = await fetch('https://web3-assign1-zj1j.onrender.com/api/gallery');
         const data = await response.json();
         setGalleryData(data);
       } catch (error) {

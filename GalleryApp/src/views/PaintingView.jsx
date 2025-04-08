@@ -31,13 +31,13 @@ const PaintingView = () => {
     const fetchData = async () => {
       try {
         // Fetch paintings
-        const paintingsResponse = await fetch('http://35.193.45.17:8080/api/paintings');
+        const paintingsResponse = await fetch('https://web3-assign1-zj1j.onrender.com/api/paintings');
         const paintingsData = await paintingsResponse.json();
         setPaintings(paintingsData);
         setFilteredPaintings(paintingsData);
 
         // Fetch artists
-        const artistsResponse = await fetch('http://35.193.45.17:8080/api/artists');
+        const artistsResponse = await fetch('https://web3-assign1-zj1j.onrender.com/api/artists');
         const artistsData = await artistsResponse.json();
         const formattedArtists = artistsData.map(artist => ({
           id: artist.artistId,
@@ -46,7 +46,7 @@ const PaintingView = () => {
         setArtists(formattedArtists);
 
         // Fetch galleries
-        const galleriesResponse = await fetch('http://35.193.45.17:8080/api/gallery');
+        const galleriesResponse = await fetch('https://web3-assign1-zj1j.onrender.com/api/gallery');
         const galleriesData = await galleriesResponse.json();
         const formattedGalleries = galleriesData.map(gallery => ({
           id: gallery.galleryId,
@@ -55,7 +55,7 @@ const PaintingView = () => {
         setGalleries(formattedGalleries);
 
         // Fetch genres
-        const genresResponse = await fetch('http://35.193.45.17:8080/api/genres');
+        const genresResponse = await fetch('https://web3-assign1-zj1j.onrender.com/api/genres');
         const genresData = await genresResponse.json();
         const formattedGenres = genresData.map(genre => ({
           id: genre.genreId,
@@ -86,7 +86,7 @@ const PaintingView = () => {
       let result = [...paintings];
 
       if (selectedGenre) {    // since painting endpoint doesnt contain genre we are getting all painting from selected genre and then filtering the loaded painting array for the Id
-        const genreResponse = await fetch(`http://35.193.45.17:8080/api/paintings/genre/ref/${selectedGenre}`);
+        const genreResponse = await fetch(`https://web3-assign1-zj1j.onrender.com/api/paintings/genre/ref/${selectedGenre}`);
         const genrePaintings = await genreResponse.json();
         const genrePaintingIds = genrePaintings.map(p => p.paintingId);
         
