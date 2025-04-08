@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+/* .leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+} */
+/* .login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('C:\Users\utsav\workspace\web3assign2\GalleryApp\src\assets\eric-park-QbX8A8eHfzw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Poppins', sans-serif;
+}
+
+.login-card {
+  transform: translateX(-35px);
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(65, 1, 56, 0.1);
+  width: 340px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 1rem 1.25rem;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-weight: 300;
+}
+
+input:focus {
+  outline: none;
+  border-color: #555;
+  box-shadow: 0 0 0 4px rgba(85, 85, 85, 0.1);
+  background-color: white;
+}
+
+button {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-credit {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 1.5rem;
+  font-weight: 300;
+} */
